@@ -1,0 +1,314 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #171615;
+    color: white;
+    text-align: center;
+    font-family: 'Cairo', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --nav-color:rgba(0, 0, 0, 0.9);
+}
+
+section {
+    padding: 100px 0;
+}
+
+.hero-section {
+    padding: 0!important;
+}
+
+nav {
+    background-color: var(--nav-color);
+    position:fixed;
+    z-index: 2;
+    width: 100%;
+}
+
+nav .container .logo {
+    background-color: var(--nav-color);
+    width: 30%;
+    height: 100%;
+}
+
+nav .container .logo img {
+    background-color: var(--nav-color);
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+}
+
+nav .container {
+    width: 80%;
+    margin: auto;
+    padding: 25px 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li {
+    background-color: transparent;
+}
+
+nav .links ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    direction: rtl;
+    background-color: transparent;
+    padding: 25px;
+}
+
+nav .links li:hover {
+    color: #777;
+}
+
+.background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.background-image {
+    width: 100%;
+    position: absolute;
+}
+
+.hero-section .text {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    padding: 100px 0;
+}
+
+.hero-section .text::before {
+    content: "";
+    background-color: black;
+    opacity: 0.5;
+    width: 98.9vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -50%;
+    z-index: -1;
+}
+
+.hero-section .text h1 {
+    background-color: transparent;
+    margin: 25px 0;
+}
+
+.hero-section .text p {
+    background-color: transparent;
+    margin: 25px 0;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: rgb(97, 94, 94);
+}
+
+button:hover {
+    background-color: rgb(34, 33, 33);
+    transition: .3s;
+}
+
+.text-section .text button {
+    margin: 50px 0;
+}
+
+.text-section .text span {
+    color: red;
+}
+
+#Paris {
+    display: none;
+}
+
+nav .container img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+iframe {
+    width: 90%;
+    height: 800px;
+}
+
+@media (max-width: 426px) {
+    nav .container {
+        width: 80%;
+        align-items: center;
+    }
+
+    nav .tab {
+        display: flex;
+        align-items: center;
+    }
+
+    nav .container .logo {
+        width: 40%;
+    }
+
+    nav .container button {
+        margin: 0 5px;
+        padding: 5px 10px;
+    }
+}
+
+.hero-section iframe {
+    width: 100%;
+    height: 600px;
+}
+
+.images-section {
+    padding: 200px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+.images-section h1 {
+    margin: 100px 0;
+}
+
+.images-section .container {
+    width: 80%;
+    margin: auto;
+}
+
+.images-section .container img {
+    width: 50%;
+    margin: 25px 0;
+}
+
+.video-section h1 {
+    margin: 100px 0;
+}
+
+.text-section .container h1 {
+    margin: 100px 0;
+}
+
+.download-section h1 {
+    margin: 100px 0;
+}
+
+@media (max-width: 426px) {
+    .images-section .container img {
+        width: 80%;
+    }
+}
+
+.text-section {
+    padding: 100px 0;
+}
+
+.text-section .container {
+    width: 50%;
+    margin: auto;
+}
+
+.text-section h1 {
+    margin: 25px 0;
+}
+
+#Paris .main-section {
+    padding: 100px 0;
+}
+
+#Paris .main-section .container {
+    width: 80%;
+    margin: auto;
+}
+
+#Paris .main-section .container h1 {
+    margin: 25px 0;
+}
+
+#Paris .main-section .container p {
+    line-height: 1.5;
+}
+
+p {
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contact-container {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    gap: 50px;
+}
+
+.contact-container .contact {
+    padding: 10px 20px;
+    background-color: antiquewhite;
+    color: black;
+    border-radius: 10px;
+}
+
+.contact-container .contact a {
+    background-color: transparent;
+    color: black;
+}
+
+.contact-container .contact p {
+    background-color: transparent;
+    color: black;
+}
+
+@media (max-width: 769px) {
+    .contact-container {
+        flex-direction: column;
+    }
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+  }
+  
+  td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr {
+    background-color: #023a5f;
+  }
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    text-align: center;
+    color: white;
+  }
