@@ -139,8 +139,8 @@ button:hover {
     display: none;
 }
 
-nav .container img {
-    width: 100%;
+nav .container a img {
+    width: 50%;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -151,24 +151,91 @@ iframe {
     height: 800px;
 }
 
-@media (max-width: 426px) {
+nav .container .logo {
+    width: 30%;
+}
+
+nav .links {
+    opacity: 1;
+}
+
+nav .menu {
+    display: none;
+}
+
+@media (max-width: 769px) {
     nav .container {
-        width: 80%;
+        width: 90%;
         align-items: center;
+        justify-content: space-between;
     }
 
-    nav .tab {
-        display: flex;
-        align-items: center;
-    }
-
-    nav .container .logo {
-        width: 40%;
+    nav .container .logo img {
+        width: 100%;
     }
 
     nav .container button {
         margin: 0 5px;
         padding: 5px 10px;
+    }
+
+    nav {
+        position: fixed;
+    }
+
+    nav .links {
+        opacity: 0;
+        background-color: var(--nav-color);
+        transition: 0.2s;
+    }
+
+    nav .menu {
+        width: 8%;
+        background-color: transparent;
+    }
+
+    nav .menu svg {
+        width: 100%;
+        background-color: transparent;
+        fill: white;
+    }
+
+    nav .links {
+        position: absolute;
+        top: 78px;
+        right: 0;
+    }
+
+    nav .links ul {
+        flex-direction: column;
+    }
+
+    .hero-section .background-image {
+        position: relative;
+        padding-bottom: 30%;
+    }
+
+    .hero-section .text::before {
+        height: 50%;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        transform: translateY(-50%);
+    }
+
+    .hero-section .text {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        padding: 100px 0;
+        width: 100%;
+    }
+
+    nav .menu {
+        display: block;
     }
 }
 

@@ -1,13 +1,11 @@
-function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
+var menuButton = document.querySelector(".menu").addEventListener("click", menu);
+
+function menu() {
+  var links = document.querySelector(".links");
+
+  if(links.style.opacity === "1") {
+    links.style.opacity = "0";
+  } else {
+    links.style.opacity = "1";
   }
+}
